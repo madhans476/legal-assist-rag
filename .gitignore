@@ -12,3 +12,7 @@ wheels/
 
 .env 
 test_config.py
+
+
+data/grouped_categories
+
