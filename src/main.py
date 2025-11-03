@@ -1,7 +1,7 @@
 from src.rag.rag_graph import app
 
 initial_state = {
-    "user_query": "My Flat based in Tughlakabad, Delhi has been captured by one of the goon in my area. Please, suggest some of the curative action that can be taken.",
+    "user_query": "My Flat based in Tughlakabad, Delhi has been captured by one of the goon in my area. Please, suggest some of the curative actions that can be taken.",
     "query_embedding": [],
     "retrieved_chunks": [],
     "response": "",
