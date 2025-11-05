@@ -50,8 +50,8 @@ def create_collection(client: MilvusClient, collection_name: str = settings.MILV
         )
 
         schema.add_field(field_name="id", datatype=DataType.INT64, is_primary=True, auto_id=True)
-        schema.add_field(field_name="embedding", datatype=DataType.FLOAT_VECTOR, dim=384)
-        schema.add_field(field_name="content", datatype=DataType.VARCHAR, max_length=4096)
+        schema.add_field(field_name="embedding", datatype=DataType.FLOAT_VECTOR, dim=768)
+        schema.add_field(field_name="content", datatype=DataType.VARCHAR, max_length=8192)
         schema.add_field(field_name="metadata", datatype=DataType.JSON)
 
         # Prepare index parameters

@@ -25,7 +25,7 @@ class Settings:
 
     # === LLM / Embedding Model Configs === #
     HF_API_KEY: str = os.getenv("HF_API_KEY")
-    EMBEDDING_MODEL_NAME: str = os.getenv("EMBEDDING_MODEL_NAME", "sentence-transformers/all-MiniLM-L6-v2")
+    EMBEDDING_MODEL_NAME: str = os.getenv("EMBEDDING_MODEL_NAME", "sentence-transformers/all-mpnet-base-v2")
 
     # === Chunking Parameters === #
     CHUNK_SIZE: int = int(os.getenv("CHUNK_SIZE", 800))

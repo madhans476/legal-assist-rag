@@ -53,7 +53,8 @@ def process_category_file(file_path):
         # break
         # Combine query + expert responses
         for i, resp in enumerate(responses, start=1):
-            combined_text = f"Expert {i}: {resp.get("response-text")}"
+            response = resp.get("response-text", "")
+            combined_text = f"Expert {i}: {response}"
             
             for chunk in chunk_text(combined_text):
                 chunks_list.append({
